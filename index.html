@@ -290,32 +290,11 @@
   <header>
     <p class="eyebrow">CS381 · Game Engine Architecture</p>
     <h1>Flappy<br><em>Chicken</em></h1>
-    <p class="tagline">A 3D side-scrolling game built with raylib. Guide a Minecraft chicken through an endless pipe gauntlet — one button, pure reflex.</p>
-    <div class="header-meta">
-      <div class="meta-item">
-        <span class="meta-label">Engine</span>
-        <span class="meta-value">raylib 5.0 + raylib-cpp</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Language</span>
-        <span class="meta-value">C++</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Platform</span>
-        <span class="meta-value">Windows 64-bit</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Course</span>
-        <span class="meta-value">Assignment 6</span>
-      </div>
-    </div>
   </header>
 
   <section id="about">
     <h2>About the game</h2>
-    <p>Flappy Chicken brings the classic one-button arcade formula into 3D. The player controls a chicken that falls under gravity and jumps on a keypress, dodging a continuous stream of pipe obstacles while racking up points.</p>
-    <p>Built as a demonstration of a component-based entity system — each object is assembled from reusable components: Transform, Physics, DrawModel, Input, and Collider. The architecture mirrors real engine ECS patterns in a lightweight, self-contained codebase.</p>
-  </section>
+    <p>Flappy Chicken is a Flappy bird like game where you play as a minecraft chicken dodging incoming pipes while just trying to get a high score. Each time you pass a set of pipes your score will go up by one. How far can you make it? Will you get the highest score?</p>
 
   <section id="screenshots">
     <h2>Screenshots</h2>
@@ -328,54 +307,30 @@
     <div class="screenshots">
       <div class="shot-wrap">
         <div class="shot">
-          <img src="screenshot1.png" alt="Gameplay" onerror="this.style.display='none'" />
+          <img src="FlappyChickenMenu.png" alt="Menu" onerror="this.style.display='none'" />
           <div class="shot-placeholder">screenshot 1</div>
         </div>
-        <p class="shot-caption">Gameplay — navigating the pipes</p>
+        <p class="shot-caption">Main menu/preview before the game starts.</p>
       </div>
       <div class="shot-wrap">
         <div class="shot">
-          <img src="screenshot2.png" alt="Main menu" onerror="this.style.display='none'" />
+          <img src="FlappyChickenGameOver.png" alt="Game Over" onerror="this.style.display='none'" />
           <div class="shot-placeholder">screenshot 2</div>
         </div>
-        <p class="shot-caption">Main menu</p>
-      </div>
-      <div class="shot-wrap">
-        <div class="shot">
-          <img src="screenshot3.png" alt="Game over" onerror="this.style.display='none'" />
-          <div class="shot-placeholder">screenshot 3</div>
-        </div>
-        <p class="shot-caption">Game over screen</p>
-      </div>
-    </div>
+        <p class="shot-caption">Shows your final score when you die.</p>
   </section>
 
   <section id="video">
     <h2>Demo video</h2>
-    <!--
-      HOW TO ADD A VIDEO — pick one option:
+      <video src="FlappyChickenDemoVid.mp4" controls></video>
 
-      OPTION A — YouTube:
-      Replace YOUR_VIDEO_ID and uncomment the line below:
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
 
-      OPTION B — Local video file:
-      Upload a .mp4 to your repo and uncomment:
-      <video src="demo.mp4" controls></video>
-
-      Then delete the video-placeholder div below.
-    -->
     <div class="video-wrap">
-      <div class="video-placeholder">
-        <span class="play-icon">▶</span>
-        <p>Add a YouTube embed or video file here</p>
-      </div>
     </div>
   </section>
 
   <section id="controls">
-    <h2>How to play</h2>
-    <p>Download and extract the zip. Keep all folders next to the .exe, then double-click to launch.</p>
+    <h2>Controls</h2>
     <div class="controls">
       <div class="control-row">
         <span class="control-key">Space</span>
@@ -392,33 +347,8 @@
     </div>
   </section>
 
-  <section id="tech">
-    <h2>Built with</h2>
-    <p>Written in C++ using raylib as the graphics and audio foundation. UI via raygui, skybox via custom GLSL shaders, and built with CMake.</p>
-    <div class="pills">
-      <span class="pill">C++</span>
-      <span class="pill">raylib 5.0</span>
-      <span class="pill">raylib-cpp</span>
-      <span class="pill">raygui</span>
-      <span class="pill">GLSL shaders</span>
-      <span class="pill">OpenGL</span>
-      <span class="pill">CMake</span>
-    </div>
-  </section>
-
-  <section id="download">
-    <h2>Download</h2>
-    <p>Windows 64-bit build. No install required — extract the zip and run the .exe.</p>
-    <!-- Update this URL once you have a GitHub Release -->
-    <a href="https://github.com/1102-Wu-Joe/CS381repo/releases" class="download-btn" target="_blank">
-      ↓ &nbsp; Download for Windows
-    </a>
-    <p class="download-note">Windows 10 / 11 · 64-bit · Keep audio/, models/, generated/ folders alongside the .exe</p>
-  </section>
-
   <footer>
     <p>CS381 Assignment 6 · Joe Wu</p>
-    <p><a href="https://github.com/1102-Wu-Joe/CS381repo/tree/main/AS6" target="_blank">View source on GitHub</a></p>
   </footer>
 
 </div>
